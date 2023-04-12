@@ -1,0 +1,91 @@
+:root {
+  /* >>= Display Breakpoints =<< */
+  --width_mobile: 576px;
+  --width_tablet: 768px;
+  --width_desktop: 992px;
+  --width_hd: 1200px;
+
+  /* >>= MULTIPLIER =<< */
+  --space_multiplier: 1;
+  --font-multiplier: 1.5em;
+  --main_spacing: 15px 5px 10px 5px;
+  --header_footer_spacing: 10px 5px;
+}
+
+/* -------------------- */
+/* RESPONSIVENESS ----- */
+/* -------------------- */
+@media (min-width: var(--breakpoint_mobile)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+@media (min-width: var(--breakpoint_tablet)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+@media (min-width: var(--breakpoint_desktop)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+@media (min-width: var(--breakpoint_hd)) {
+  :root {
+    --spacing-multiplier: 2;
+    --headings-multiplier: 1.5;
+  }
+}
+
+/* >>= Breakpoint (Default) - Mobile =<< */
+.column {
+  --columns: 12; /* number of columns in the grid system */
+  --width: var(--width-mobile, 0); /* width of the element */
+
+  border: var(--color-accent-2) 2px solid;
+  border-radius: 8px;
+  padding: 16px;
+  flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+/* >>= Breakpoint - Tablet =<< */
+@media (min-width: 576px) {
+  .column {
+    --width-tablet: var(--width-mobile);
+    --width: var(--width-tablet);
+  }
+}
+
+/* >>= Breakpoint - Desktop =<< */
+@media (min-width: 768px) {
+  .column {
+    --width-desktop: var(--width-tablet);
+    --width: var(--width-desktop);
+  }
+}
+
+/* >>= Breakpoint - Ultra =<< */
+@media (min-width: 992px) {
+  .column {
+    --width-hd: var(--width-desktop);
+    --width: var(--width-hd);
+  }
+}
+
+/* For extremely small screen devices (595px and below)
+/* @media only screen and (max-width: 595px) {...} */
+
+/* Small screen devices (600px and above) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium screen devices (768px and above) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Big screen devices (889px and above) */
+/* @media only screen and (min-width: 889px) {...} */
+
+/* Extra big screen devices (1200px and above) */
+/* @media only screen and (min-width: 1200px) {...} */

@@ -1,0 +1,28 @@
+#page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1em;
+  height: 100%;
+}
+
+.item {
+  background-color: var(--color_dark_2);
+  color: var(--overlay_dark_1);
+  font-family: var(--font_display_1);
+  font-size: calc(var(--font_multiplier) * 4);
+  font-weight: 900;
+
+  display: grid;
+  place-items: center;
+}
+
+.item:hover {
+  color: red;
+}
+
+
+@media screen and (min-width: 576px) {
+  .item {
+    background-color: var(--overlay_accent_2);
+  }
+}

@@ -1,0 +1,57 @@
+.src/
+├── assets
+│   ├── images
+│   │   └── structure
+│   └── multimedia
+├── docs
+├── patterns
+│   ├── 01-objects
+│   │   ├── amount
+│   │   ├── button
+│   │   ├── icons
+│   │   ├── input
+│   │   ├── logo
+│   │   ├── media
+│   │   ├── message
+│   │   ├── pagination
+│   │   ├── sort
+│   │   └── video
+│   ├── 02-components
+│   │   ├── accordion
+│   │   ├── breadcrumbs
+│   │   ├── chat
+|   |       ...
+│   └── templates
+│       └── new-landing-page
+├── scripts
+│   ├── utilities
+│   └── vendor
+└── styles
+    ├── elements
+    │   ├── _base.scss
+    │   ├── _headings.scss
+    │   ├── _input.scss
+    │   └── _select.scss
+    ├── generic
+    │   ├── _content.scss
+    │   ├── _flex.scss
+    │   ├── _print.scss
+    │   └── _typography.scss
+    ├── main.scss
+    ├── settings
+    │   ├── _settings.config.scss
+    │   └── _settings.global.scss
+    ├── tools
+    │   └── _shadows.scss
+    ├── trumps
+    ├── utilities
+    │   ├── _align.scss
+    │   ├── _clearfix.scss
+    │   ├── _colors.scss
+    │   ├── _content.scss
+    │   ├── _fonts-loaded.scss
+    │   └── _hide.scss
+    └── vendor
+        ├── _ui-datepicker.scss
+        ├── _yui-grid.scss
+        └── mvp.scss

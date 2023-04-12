@@ -1,0 +1,105 @@
+// >>= Family =<<
+//| Google Fonts
+// @import 'https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Stencil+Display:wght@100;200;300;400;500;600;700;800;900&family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&family=Lavishly+Yours&family=Love+Light&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=The+Nautigal:wght@400;700&family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Updock&display=swap';
+
+:root{
+//| Display
+--font-display-1: 'Big Shoulders Display', cursive;
+--font-display-2: 'Big Shoulders Stencil Display', cursive;
+--font-display-3: 'Expletus Sans', cursive;
+--font-display-4: 'Tourney', cursive;
+
+//| Handwriting
+--font-handwriting-1: 'Lavishly Yours', cursive;
+--font-handwriting-2: 'Love Light', cursive;
+--font-handwriting-3: 'The Nautigal', cursive;
+--font-handwriting-4: 'Updock', cursive;
+
+//| Monospace
+--font-monospace-1: 'Fira Code', monospace;
+--font-monospace-2: 'JetBrains Mono', monospace;
+
+//| Serif
+--font-serif-1: 'Noto Serif', serif;
+--font-serif-2: 'Playfair Display', serif;
+
+//| Sans-Serif
+--font-sans-1: 'Poppins', sans-serif;
+--font-sans-2: 'Montserrat', sans-serif;
+}
+
+// >>= Sizes =<<
+//| Size
+// $text-base: {
+//   font-size: 1rem; /* 16px */
+//   line-height: 1.5rem; /* 24px */
+// };
+// $huge-size: 1.5em;
+// $huge-size: 1.5em;
+// $huge-size: 1.5em;
+// $huge-size: 1.5em;
+
+//| Weights
+$hairline-weight: 100;
+$thin-weight:     200;
+$light-weight:    300;
+$normal-weight:   400;
+$medium-weight:   500;
+$semibold-weight: 600;
+$bold-weight:     700;
+$xbold-weight:    800;
+$black-weight:    900;
+
+//| Weight Synonyms
+$regular-weight:    $normal-weight;
+$book-weight:       $light-weight;
+$xlight-weight:     $hairline-weight;
+$ultralight-weight: $hairline-weight;
+$heavy-weight:      $xbold-weight;
+
+// >>= Styles =<<
+h1 {
+  font: {
+    // family: 'Expletus Sans', cursive;
+    family: var(--font-display-1);
+    // size: $font-size;
+    weight: $heavy-weight;
+  }
+
+  text: {
+    align: center;
+    transform: uppercase;
+    overflow: hidden;
+  }
+}
+
+// h2 {
+//   font: {
+//     family: $font-display-2;
+//     // size: $font-size;
+//     weight: $bold-weight;
+//   }
+
+//   text: {
+//     align: center;
+//     transform: uppercase;
+//     overflow: hidden;
+//   }
+// }
+
+
+// body, p {
+//   font: {
+//     family: $font-handwriting-2;
+//     // size: $font-size * .5;
+//     weight: $normal-weight;
+//   }
+// }
+
+// em {
+//   font-style: italic;
+// }
+
+// strong {
+//   font-weight: $bold-weight;
+// }

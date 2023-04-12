@@ -1,0 +1,148 @@
+/* >>= VARIABLES =<< */
+:root {
+  /*| FAMILY - Display |*/
+  --font-display-1: 'Big Shoulders Stencil Display', cursive;
+  --font-display-2: 'Big Shoulders Display', cursive;
+  --font-display-3: 'Expletus Sans', cursive;
+  --font-display-4: 'Tourney', cursive;
+
+  /*| FAMILY - Handwriting |*/
+  --font-handwriting-1: 'Lavishly Yours', cursive;
+  --font-handwriting-2: 'Love Light', cursive;
+  --font-handwriting-3: 'The Nautigal', cursive;
+  --font-handwriting-4: 'Updock', cursive;
+
+  /*| FAMILY - Monospace |*/
+  --font-monospace-1: 'Fira Code', monospace;
+  --font-monospace-2: 'JetBrains Mono', monospace;
+
+  /*| FAMILY - Serif |*/
+  --font-serif-1: 'Noto Serif', serif;
+  --font-serif-2: 'Playfair Display', serif;
+
+  /*| FAMILY - Sans-Serif |*/
+  --font-sans-1: 'Poppins', sans-serif;
+  --font-sans-2: 'Montserrat', sans-serif;
+
+  /*| FAMILY - Defaults |*/
+  --font-heading: var(--font-display-2);
+  --font-fancy: var(--font-handwriting-1);
+  --font-code: var(--font-monospace-1);
+  --font-primary: var(--font-sans-1);
+  --font-secondary: var(--font-serif-1);
+
+  /*| SIZE |*/
+  --text-base-size: 1.2em;
+  --text-scale-ratio: 1.2;
+  --heading-line-height: 1.2;
+  --body-line-height: 1.4;
+  --text-xs: calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
+  --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+  /*| WEIGHT |*/
+  --wght-hairline: 100;
+  --wght-xlight: 200;
+  --wght-light: 300;
+  --wght-normal: 400;
+  --wght-medium: 500;
+  --wght-semi: 600;
+  --wght-bold: 700;
+  --wght-xbold: 800;
+  --wght-heavy: 900;
+}
+
+/* >>= STYLES =<< */
+
+/* | Family | */
+* {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  font-family: var(--font-fancy);
+  font-weight: var(--wght-heavy);
+  text-align: center;
+  color: var(--color-accent-3);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--font-display-3);
+}
+
+h4 {
+  font-family: var(--font-handwriting-2);
+}
+
+code {
+  font-family: var(--font-code);
+}
+
+/* | SIZES | */
+.text--xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h1,
+.text--xxl {
+  font-size: var(--text-xxl);
+}
+
+h2,
+.text--xl {
+  font-size: var(--text-xl);
+}
+
+h3,
+.text--lg {
+  font-size: var(--text-lg);
+}
+
+h4,
+.text--md {
+  font-size: var(--text-md);
+}
+
+.text--sm,
+small {
+  font-size: var(--text-sm);
+}
+
+.text--xs {
+  font-size: var(--text-xs);
+}
+
+p {
+  line-height: var(--body-line-height);
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+form legend {
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+.truncate {
+  /* truncate text if it exceeds parent */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

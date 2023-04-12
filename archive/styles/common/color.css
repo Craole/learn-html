@@ -1,0 +1,33 @@
+:root {
+  /* >>= Rich Earth =<< */
+  --sage: #c9cba3ff;
+  --peach: #ffe1a8ff;
+  --terra-cotta: #e26d5cff;
+  --catawba: #723d46ff;
+  --old-burgundy: #472d30ff;
+
+  /* >>= COLORS =<< */
+  --color-light-1: #fefcff; /* Milk White */
+  --color-light-2: #faf0dd; /* Soft Ivory */
+  --color-light-3: #ffe6e8; /* Blush */
+  --color-light-4: #fefcff59;
+  --color-dark-1: #0b1015; /* VSCode */
+  --color-dark-2: #0c090a; /* Night */
+  --color-dark-3: #3d3c3a; /* Iridium */
+  --color-dark-4: #29465b; /* Dark Blue Grey */
+  --color-accent-1: #aa6c39; /* Dark Gold */
+  --color-accent-2: #f5e216; /* Banana Yellow */
+  --color-accent-3: #f70d1a; /* Ferrari Red */
+  --color-overlay-dark-1: rgba(2, 12, 16, 0.9);
+  --color-overlay-dark-2: rgba(2, 12, 16, 0.9);
+  --color-overlay-accent-1: rgba(12, 9, 10, 0.5);
+  --color-overlay-accent-2: rgba(50, 0, 0, 0.5);
+  --color-overlay-light-1: rgba(141, 167, 179, 0.75);
+  --color-overlay-light-2: rgba(50, 0, 0, 0.9);
+
+  --translucent-zero: 0;
+  --translucent-slight: 0.75;
+  --translucent-significant: 0.5;
+  --overlay-opacity: var(--translucent-zero);
+  --overlay-z-index: 10 ;
+}

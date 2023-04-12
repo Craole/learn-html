@@ -1,0 +1,17 @@
+@import '/styles/common/reset.css';
+@import '/styles/common/color.css';
+@import '/styles/common/typography.css';
+@import '/styles/common/global.css';
+
+main {
+  color: var(--color-overlay-light-1);
+  background-color: var(--color-dark-1);
+}
+footer {
+  color: var(--color-overlay-light-1);
+  background-color: var(--color-overlay-dark-1);
+}
+
+h1 {
+  font-family: var(--font-display-4);
+}
