@@ -1,6 +1,6 @@
 @import 'css/base/reset.css';
 @import 'css/layout/responsive.css';
-@import 'css/layout.css';
-/* @import 'typography.css'; */
-/* @import 'color.css'; */
-/* @import 'global.css'; */
+
+body {
+  background-color: red;
+}
