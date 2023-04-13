@@ -1,0 +1,159 @@
+/* >>= Fonts Via Google =<< */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Stencil+Display:wght@100;200;300;400;500;600;700;800;900&family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&family=Lavishly+Yours&family=Love+Light&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=The+Nautigal:wght@400;700&family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Updock&display=swap');
+
+/* >>= VARIABLES =<< */
+:root {
+  /*| FAMILY - Display |*/
+  --ff-display-1: 'Big Shoulders Stencil Display', cursive;
+  --ff-display-2: 'Big Shoulders Display', cursive;
+  --ff-display-3: 'Expletus Sans', cursive;
+  --ff-display-4: 'Tourney', cursive;
+
+  /*| FAMILY - Handwriting |*/
+  --ff-handwriting-1: 'Lavishly Yours', cursive;
+  --ff-handwriting-2: 'Love Light', cursive;
+  --ff-handwriting-3: 'The Nautigal', cursive;
+  --ff-handwriting-4: 'Updock', cursive;
+
+  /*| FAMILY - Monospace |*/
+  --ff-monospace-1: 'Fira Code', monospace;
+  --ff-monospace-2: 'JetBrains Mono', monospace;
+
+  /*| FAMILY - Serif |*/
+  --ff-serif-1: 'Noto Serif', serif;
+  --ff-serif-2: 'Playfair Display', serif;
+
+  /*| FAMILY - Sans-Serif |*/
+  --ff-sans-1: 'Poppins', sans-serif;
+  --ff-sans-2: 'Montserrat', sans-serif;
+
+  /*| FAMILY - Defaults |*/
+  --ff-heading: var(--ff-display-2);
+  --ff-fancy: var(--ff-handwriting-1);
+  --ff-code: var(--ff-monospace-1);
+  --ff-sans: var(--ff-sans-1);
+  --ff-serif: var(--ff-serif-1);
+
+  /*| SIZE |*/
+  --fs-base: 1.2rem;
+  --fs-scale: 1.35;
+  --heading-line-height: 1.2;
+  --body-line-height: 1.4;
+  --fs-xs: calc(var(--fs-base) / (var(--fs-scale) * var(--fs-scale)));
+  --fs-sm: calc(var(--fs-base) / var(--fs-scale));
+  --fs-md: calc(var(--fs-base) * var(--fs-scale));
+  --fs-lg: calc(var(--fs-base) * var(--fs-scale) * var(--fs-scale));
+  --fs-xl: calc(
+    var(--fs-base) * var(--fs-scale) * var(--fs-scale) *
+      var(--fs-scale)
+  );
+  --fs-xxl: calc(
+    var(--fs-base) * var(--fs-scale) * var(--fs-scale) *
+      var(--fs-scale) * var(--fs-scale)
+  );
+  --fs-xxxl: calc(
+    var(--fs-base) * var(--fs-scale) * var(--fs-scale) *
+      var(--fs-scale) * var(--fs-scale) * var(--fs-scale)
+  );
+
+  /*| WEIGHT |*/
+  --fw-hairline: 100;
+  --fw-xlight: 200;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+  --fw-xbold: 800;
+  --fw-heavy: 900;
+}
+
+/* >>= STYLES =<< */
+
+/* | Family | */
+* {
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-family: var(--ff-fancy);
+  font-weight: var(--fw-heavy);
+  /* text-align: center; */
+}
+
+h2 {
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--ff-display-3);
+}
+
+h4 {
+  font-family: var(--ff-handwriting-2);
+}
+
+code {
+  font-family: var(--ff-code);
+}
+
+/* | SIZES | */
+.text--xxxl {
+  font-size: var(--fs-xxxl);
+}
+
+h1,
+.text--xxl {
+  font-size: var(--fs-xxl);
+}
+
+h2,
+.text--xl {
+  font-size: var(--fs-xl);
+}
+
+h3,
+.text--lg {
+  font-size: var(--fs-lg);
+}
+
+h4,
+.text--md {
+  font-size: var(--fs-md);
+}
+
+.text--sm,
+small {
+  font-size: var(--fs-sm);
+}
+
+.text--xs {
+  font-size: var(--fs-xs);
+}
+
+p {
+  line-height: var(--body-line-height);
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+form legend {
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-xxs);
+  line-height: var(--heading-line-height);
+}
+
+.truncate {
+  /* truncate text if it exceeds parent */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
