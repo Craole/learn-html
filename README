@@ -1,11 +1,17 @@
 # HTML/CSS Journey
 
-- Create a styles directory with CSS and SASS folders
-- Create an index.css file
-- Create an index.html file
-- Create an index.js file
-- Create an index.scss file
-- Create a package.json file
-- Create a README.md file
-- Create a gitignore file
-- Create a gitignore file
+## Project Management
+
+- [x] Create folders for assets, pages, scripts and styles.
+
+## HTML
+
+- [x] Create **main entrypoint** at `index.html`
+- [x] Create **homepage** at `pages/home.html`
+- [x] Redirect the main entrypoint to the homepage.
+- [x] Create **404.html** at `pages/404.html`
+
+## CSS
+
+- [x] Create CSS Template sub directories
+- [x] Create **main.css** at `/styles/index.css`
