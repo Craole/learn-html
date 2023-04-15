@@ -1,0 +1,122 @@
+:root {
+  /* >>= BASE =<< */
+  --color-h_primary: 170;
+  --color-s_primary: 80%;
+  --color-l_primary: 50%;
+  --color-h_secondary: 17;
+  --color-s_secondary: 80%;
+  --color-l_secondary: 50%;
+  --color-c-threshold: 60%;
+
+  /* >>= COLORS =<< */
+  --color-h_primary-complement: calc(var(--color-h_primary) + 180);
+  --color-h_primary-triad1: calc(var(--color-h_primary) + 120);
+  --color-h_primary-triad2: calc(var(--color-h_primary) + 240);
+
+  --color_primary: hsl(
+    var(--color-h_primary),
+    var(--color-s_primary),
+    var(--color-l_primary)
+  );
+
+  --color_primary-complement: hsl(
+    var(--color-h_primary-complement),
+    var(--color-s_primary),
+    var(--color-l_primary)
+  );
+
+  --color_primary-triad1: hsl(
+    var(--color-h_primary-triad1),
+    var(--color-s_primary),
+    var(--color-l_primary)
+  );
+
+  --color_primary-triad2: hsl(
+    var(--color-h_primary-triad2),
+    var(--color-s_primary),
+    var(--color-l_primary)
+  );
+  /* --clr-pri: hsl(170, 70%, 50%); */
+  /* --clr-sec: hsl(17, 70%, 50%);
+  --clr-black: hsl(0, 0%, 7%);
+  --clr-white: hsl(0, 0%, 95%); */
+
+  /* >>= Rich Earth =<< */
+  --sage: #c9cba3ff;
+  --peach: #ffe1a8ff;
+  --terra-cotta: #e26d5cff;
+  --catawba: #723d46ff;
+  --old-burgundy: #472d30ff;
+
+
+  --translucent-zero: 0;
+  --translucent-slight: 0.75;
+  --translucent-significant: 0.5;
+  --overlay-opacity: var(--translucent-zero);
+  --overlay-z-index: 10;
+
+  --clr-primary-400: hsl(var(--hue), 66%, 50%);
+  --clr-primary-500: hsl(var(--hue), 80%, 40%);
+  --clr-primary-600: hsl(var(--hue), 84%, 32%);
+  /* --clr-primary-min: hsl(0, 0%, 95%);
+  --clr-primary-100: hsl(167, 85%, 89%);
+  --clr-primary-200: hsl(168, 84%, 78%);
+  --clr-primary-300: hsl(171, 77%, 64%);
+  --clr-primary-400: hsl(172, 66%, 50%);
+  --clr-primary-500: hsl(173, 80%, 40%);
+  --clr-primary-600: hsl(175, 84%, 32%);
+  --clr-primary-700: hsl(175, 77%, 26%);
+  --clr-primary-800: hsl(176, 69%, 22%);
+  --clr-primary-900: hsl(176, 61%, 11%);
+  --clr-primary-max: hsl(0, 0%, 5%); */
+}
+
+/* Set colors based on browser/system setting */
+@media (prefers-color-scheme: dark),
+  (prefers-color-scheme: no-preference) {
+  :root {
+    /* color-scheme: dark; */
+
+    --color-secondary-hue: calc(var(--color-hue) + 180);
+    --color-triadic1-hue: calc(var(--color-hue) + 120);
+    --color-triadic2-hue: calc(var(--color-hue) + 240);
+    --hue-analogous-right-hue: calc(var(--color-hue) + 30);
+    --hue-analogous-left-hue: calc(var(--color-hue) - 30);
+    --clr-bg: var(--clr-primary-max);
+    --clr-fg: var(--clr-primary-min);
+    --clr-pri-100: var(--clr-primary-100);
+    --clr-pri-200: var(--clr-primary-200);
+    --clr-pri-300: var(--clr-primary-300);
+    --clr-pri-400: var(--clr-primary-400);
+    --clr-pri-500: var(--clr-primary-500);
+    --clr-pri-600: var(--clr-primary-600);
+    --clr-pri-700: var(--clr-primary-700);
+    --clr-pri-800: var(--clr-primary-800);
+    --clr-pri-900: var(--clr-primary-900);
+    --clr-sec-100: var(--clr-secondary-100);
+    --clr-sec-200: var(--clr-secondary-200);
+    --clr-sec-300: var(--clr-secondary-300);
+    --clr-sec-400: var(--clr-secondary-400);
+    --clr-sec-500: var(--clr-secondary-500);
+    --clr-sec-600: var(--clr-secondary-600);
+    --clr-sec-700: var(--clr-secondary-700);
+    --clr-sec-800: var(--clr-secondary-800);
+    --clr-sec-900: var(--clr-secondary-900);
+    --clr-acc-100: var(--clr-accent-100);
+    --clr-acc-200: var(--clr-accent-200);
+    --clr-acc-300: var(--clr-accent-300);
+    --clr-acc-400: var(--clr-accent-400);
+    --clr-acc-500: var(--clr-accent-500);
+    --clr-acc-600: var(--clr-accent-600);
+    --clr-acc-700: var(--clr-accent-700);
+    --clr-acc-800: var(--clr-accent-800);
+    --clr-acc-900: var(--clr-accent-900);
+  }
+}
+/* Set colors based on browser/system setting */
+@media (prefers-color-scheme: light) {
+  :root {
+    --clr-bg: var(--clr-primary-min);
+    --clr-fg: var(--clr-primary-max);
+  }
+}

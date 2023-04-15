@@ -1,0 +1,38 @@
+:root {
+  /* Thanks Lea Verou! https://lea.verou.me/2020/10/the-var-space-hack-to-toggle-multiple-values-with-one-custom-property/ */
+  --ON: initial;
+  --OFF: ;
+}
+
+.theme-light {
+  --light: var(--ON);
+  --dark: var(--OFF);
+}
+
+.theme-default,
+.theme-dark {
+  --light: var(--OFF);
+  --dark: var(--ON);
+}
+
+@media (prefers-color-scheme: dark),
+  (prefers-color-scheme: no-preference) {
+  :root,
+  .theme-default {
+    --light: var(--OFF);
+    --dark: var(--ON);
+  }
+}
+
+:root {
+  --clr-shade-light: #eeede7;
+  --clr-accent-light: #9f8b69;
+  --clr-brand: #397979;
+  --clr-accent-dark: #8c505e;
+  --clr-shade-dark: #141a1b;
+
+  --clr-primary: var(--clr-brand);
+  --clr-secondary: var(--light, var(--clr-accent-dark)) var(--dark, var(--clr-accent-light));
+  --clr-text: var(--light, var(--clr-shade-dark)) var(--dark, var(--clr-shade-light));
+  --clr-background: var(--light, var(--clr-shade-light)) var(--dark, var(--clr-shade-dark));
+}
