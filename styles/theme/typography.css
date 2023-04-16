@@ -71,13 +71,14 @@
 /* >>= STYLES =<< */
 
 /* | Family | */
-* {
+body {
   font-family: var(--ff-primary);
 }
 
 h1 {
   font-family: var(--ff-fancy);
   font-weight: var(--fw-heavy);
+  color: var(--clr-primary);
   /* text-align: center; */
 }
 

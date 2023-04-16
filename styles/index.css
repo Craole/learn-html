@@ -1,6 +1,16 @@
-@import './base/reset.css';
-@import './base/global.css';
-/* @import './theme/palette.css'; */
+/* @import './base/reset.css'; */
+/* @import './base/global.css'; */
+@import './layout/responsive.css';
+@import './layout/display.css';
 @import './theme/theme.css';
-@import './theme/color.css';
-/* @import './layout/responsive.css'; */
+@import './theme/palette.css';
+@import './theme/typography.css';
+
+@import './layout/app.css';
+
+/* @import './components/header.css'; */
+@import './components/navbar.css';
+/* @import './components/portfolio.css'; */
+/* @import './components/blog.css'; */
+/* @import './components/contact.css'; */
+/* @import './components/footer.css'; */

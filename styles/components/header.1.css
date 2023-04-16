@@ -1,0 +1,16 @@
+body > header {
+grid-area: h;
+  background-color: var(--clr-background);
+}
+
+body > header h1 {
+  color: var(--clr-primary);
+}
+
+body > header h2 {
+  color: var(--clr-secondary);
+}
+
+body > header p {
+  color: var(--clr-foreground);
+}

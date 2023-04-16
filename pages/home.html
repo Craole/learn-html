@@ -6,33 +6,111 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome -->
+  <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href=".././styles/index.css">
-  <!-- <link rel="stylesheet" href="./home.css"> -->
 
   <title>Homepage</title>
 </head>
 
-<body id="home">
+<body id="app">
+  <nav>
+    <button id="hamburger-menu" aria-controls="primary-navigation" aria-expanded="false">
+      <svg viewBox="-10 -10 120 120">
+        <path d="
+        m 20 40
+        h 60
+        a 1 1 0 0 1 0 20
+        h -60
+        a 1 1 0 0 1 0 -40
+        h 30
+        v 70">
+        </path>
+      </svg>
+    </button>
+    <section aria-label="main_navigation">
+      <!--  MENU -->
+      <!-- <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a> -->
+      <!--  MENU BUTTON -->
+    </section>
+  </nav>
+
   <header>
-    <section id="hero">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-    </section>
-    <section id="nav">
-      <nav aria-label="main_navigation">
-        <a href="Home">Home</a>
-        <a href="About">About</a>
-        <a href="Portfolio">Portfolio</a>
-        <a href="Contact">Contact</a>
-      </nav>
-    </section>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi quidem maxime deleniti praesentium
+      eum
+      amet!</p>
   </header>
-  <main>Main</main>
-  <footer>Footer</footer>
+
+
+  <main>
+    <section id="about">
+      <h1>About</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia dolores autem, excepturi ut adipisci vitae
+        id repellat, necessitatibus veniam in? Deserunt, fugit? Illum!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident aliquam soluta non consequuntur
+        quaerat dolore doloribus eligendi natus aperiam. Harum modi, ipsa animi iste eum facilis dolor? Sunt, explicabo.
+      </p>
+    </section>
+    <section id="portfolio">
+      <h1>Projects</h1>
+      <article>
+        <h2>Project 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+      <article>
+        <h2>Project 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+      <article>
+        <h2>Project 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+      <article>
+        <h2>Project 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+    </section>
+    <section id="blog">
+      <h1>Blog</h1>
+      <article>
+        <h2>Post 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+      <article>
+        <h2>Post 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+      <article>
+        <h2>Post 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+      <article>
+        <h2>Post 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente reprehenderit omnis.</p>
+      </article>
+    </section>
+    <section id="contact">
+      <h1>
+        Contact
+      </h1>
+    </section>
+  </main>
+
+  <footer>
+    <p>copyright Craole</p>
+  </footer>
+  <script src="/scripts/buttons.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,17 @@
+body > header {
+  background-color: var(--clr-background);
+  outline: solid red;
+  min-height: 100%;
+}
+
+body > header h1 {
+  color: var(--clr-primary);
+}
+
+body > header h2 {
+  color: var(--clr-secondary);
+}
+
+body > header p {
+  color: var(--clr-foreground);
+}

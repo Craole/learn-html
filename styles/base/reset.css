@@ -60,7 +60,7 @@
   bottom: auto;
   box-decoration-break: slice;
   box-shadow: none;
-  box-sizing: content-box;
+  box-sizing: border-box;
   break-after: auto;
   break-before: auto;
   break-inside: auto;
@@ -69,7 +69,7 @@
   clear: none;
   clip: auto;
   clip-path: none;
-  color: initial;
+  color: inherit;
   column-count: auto;
   column-fill: balance;
   column-gap: normal;
@@ -169,7 +169,7 @@
   opacity: 1;
   order: 0;
   orphans: 2;
-  outline-color: initial;
+  /* outline-color: initial; */
   outline-offset: 0;
   outline-style: none;
   outline-width: medium;
@@ -192,7 +192,7 @@
   perspective-origin: 50% 50%;
   pointer-events: auto;
   position: static;
-  quotes: initial;
+  /* quotes: initial; */
   resize: none;
   right: auto;
   ruby-align: space-around;
