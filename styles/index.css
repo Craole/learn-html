@@ -1,5 +1,5 @@
-/* @import './base/reset.css'; */
-/* @import './base/global.css'; */
+@import './base/reset.css';
+@import './base/global.css';
 @import './layout/responsive.css';
 @import './layout/display.css';
 @import './theme/theme.css';

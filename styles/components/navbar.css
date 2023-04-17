@@ -2,57 +2,69 @@
   --bar-width: 60px;
   --bar-height: 8px;
   --bar-gap: 6px;
-  --hamburger-width: 4rem;
-  --hamburger-line: 0.5rem;
-  --hamburger-radius: 0.5rem;
-  --hamburger-scale: 0.125;
-}
-body > nav {
-  /* padding-left: 10%;
-  padding-right: 10%;
-  padding: 1.5rem; */
-  font-size: larger;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  background-color: gold;
+  --button-size: 4rem;
+  --line-width: 0.5rem;
+  --bg-color: var(--clr-pri-shade);
+  --fg-color: var(--clr-pri);
 }
 
-#hamburger-menu {
-  border: none;
-  width: var(--hamburger-width);
-  background-color: transparent;
-  color: var(--clr-primary);
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  padding: 0.5rem;
+}
+
+/*** Logo ***/
+#navbar h1 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-md);
+}
+
+/*** Links ***/
+#navbar a {
+  text-decoration: none;
+  transition: all 0.3s;
+  /* display: grid;
+  gap: 1.5rem; */
+}
+
+#navbar a:hover {
+  transition: 0.3s background-color;
+}
+
+/*** Hamburger Menu Button ***/
+#navbar button {
+  width: var(--button-size);
   fill: transparent;
-  stroke: var(--clr-primary);
-  stroke-width: calc(var(--hamburger-line) * 1.5);
+  stroke: var(--fg-color);
+  stroke-width: var(--line-width);
   stroke-linecap: round;
   stroke-linejoin: round;
   overflow: hidden;
 }
 
-#hamburger-menu :hover {
-  color: purple;
+#navbar button:hover {
+  stroke-width: calc(var(--line-width) * 1.5);
 }
 
-#hamburger-menu svg {
+#navbar button svg {
   transition: translate 1s, rotate 1s;
 }
 
-#hamburger-menu[aria-expanded='true'] svg {
-  /* translate: 0.125rem -0.125rem;
-  rotate: 45deg; */
-  translate: calc(var(--hamburger-scale) * 1rem)
-    calc(var(--hamburger-scale) * -1rem);
-  rotate: calc(var(--hamburger-scale) * 1turn);
+#navbar button[aria-expanded='true'] svg {
+  /* translate: 0.125rem -0.125rem; */
+  rotate: 45deg;
 }
 
-#hamburger-menu path {
+#navbar button path {
   stroke-dasharray: 60 31 60 300;
   transition: 0.5s;
 }
 
-#hamburger-menu[aria-expanded='true'] path {
+#navbar button[aria-expanded='true'] path {
   stroke-dasharray: 60 104 60 300;
   stroke-dashoffset: -90;
   transition: 0.5s;

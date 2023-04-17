@@ -16,24 +16,43 @@
 
 @media (prefers-color-scheme: dark),
   (prefers-color-scheme: no-preference) {
-  :root,
-  .theme-default {
+  :root {
     --light: var(--OFF);
     --dark: var(--ON);
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --light: var(--ON);
+    --dark: var(--OFF);
+  }
+}
+
 :root {
-  --clr-primary: var(--clr-brand);
-  --clr-secondary: var(--light, var(--clr-accent-dark))
-    var(--dark, var(--clr-accent-light));
-  --clr-foreground: var(--light, var(--clr-shade-dark))
-    var(--dark, var(--clr-shade-light));
-  --clr-background: var(--light, var(--clr-shade-light))
-    var(--dark, var(--clr-shade-dark));
+  /*** Neutral ***/
+  --clr-fg: var(--light, var(--clr-neutral-max))
+    var(--dark, var(--clr-neutral-min));
+  --clr-bg: var(--light, var(--clr-neutral-200))
+    var(--dark, var(--clr-neutral-800));
+
+  /*** Primary ***/
+  --clr-pri: var(--light, var(--clr-teal-700))
+    var(--dark, var(--clr-teal-400));
+  --clr-pri-shade: var(--light, var(--clr-teal-300))
+    var(--dark, var(--clr-teal-900));
+  --clr-pri-tint: var(--light, var(--clr-teal-100))
+    var(--dark, var(--clr-teal-200));
+
+  /*** Secondary ***/
+  --clr-sec: var(--clr-amber-400);
+  --clr-sec-shade: var(--light, var(--clr-amber-700))
+    var(--dark, var(--clr-amber-800));
+  --clr-sec-tint: var(--light, var(--clr-amber-100))
+    var(--dark, var(--clr-amber-200));
 }
 
 body {
-  background-color: var(--clr-background);
-  color: var(--clr-foreground);
+  background-color: var(--clr-bg);
+  color: var(--clr-fg);
 }

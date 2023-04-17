@@ -1,5 +1,13 @@
 /*
-  1. Use a more-intuitive box-sizing model.
+  Hide head elements
+*/
+
+head {
+  display: none;
+}
+
+/*
+  Use a more-intuitive box-sizing model.
 */
 *,
 *::before,
@@ -69,4 +77,8 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+a {
+  text-decoration: none;
 }

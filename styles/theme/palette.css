@@ -1,66 +1,62 @@
 :root {
-  /* >>= BASE =<< */
-  --color-h_primary: 170;
-  --color-s_primary: 80%;
-  --color-l_primary: 50%;
-  --color-h_secondary: 17;
-  --color-s_secondary: 80%;
-  --color-l_secondary: 50%;
-  --color-c-threshold: 60%;
+  --clr-neutral-min: hsl(0, 0%, 98%);
+  --clr-neutral-100: hsl(0, 0%, 96%);
+  --clr-neutral-200: hsl(0, 0%, 90%);
+  --clr-neutral-300: hsl(0, 0%, 83%);
+  --clr-neutral-400: hsl(0, 0%, 64%);
+  --clr-neutral-500: hsl(0, 0%, 45%);
+  --clr-neutral-600: hsl(0, 0%, 32%);
+  --clr-neutral-700: hsl(0, 0%, 25%);
+  --clr-neutral-800: hsl(12, 6%, 15%);
+  --clr-neutral-900: hsl(24, 10%, 10%);
+  --clr-neutral-max: hsl(0, 0%, 4%);
 
-  /* >>= COLORS =<< */
-  --color-h_primary-complement: calc(var(--color-h_primary) + 180);
-  --color-h_primary-triad1: calc(var(--color-h_primary) + 120);
-  --color-h_primary-triad2: calc(var(--color-h_primary) + 240);
+  --clr-slate-min: hsl(210, 40%, 98%);
+  --clr-slate-100: hsl(210, 40%, 96%);
+  --clr-slate-200: hsl(214, 32%, 91%);
+  --clr-slate-300: hsl(213, 27%, 84%);
+  --clr-slate-400: hsl(215, 20%, 65%);
+  --clr-slate-500: hsl(215, 16%, 47%);
+  --clr-slate-600: hsl(215, 19%, 35%);
+  --clr-slate-700: hsl(215, 25%, 27%);
+  --clr-slate-800: hsl(217, 33%, 17%);
+  --clr-slate-900: hsl(222, 47%, 11%);
+  --clr-slate-max: hsl(229, 84%, 5%);
 
-  --color_primary: hsl(
-    var(--color-h_primary),
-    var(--color-s_primary),
-    var(--color-l_primary)
-  );
+  --clr-teal-min: hsl(166, 76%, 97%);
+  --clr-teal-100: hsl(167, 85%, 89%);
+  --clr-teal-200: hsl(168, 84%, 78%);
+  --clr-teal-300: hsl(171, 77%, 64%);
+  --clr-teal-400: hsl(172, 66%, 50%);
+  --clr-teal-500: hsl(173, 80%, 40%);
+  --clr-teal-600: hsl(175, 84%, 32%);
+  --clr-teal-700: hsl(175, 77%, 26%);
+  --clr-teal-800: hsl(176, 69%, 22%);
+  --clr-teal-900: hsl(176, 61%, 11%);
+  --clr-teal-max: hsl(179, 84%, 10%);
 
-  --color_primary-complement: hsl(
-    var(--color-h_primary-complement),
-    var(--color-s_primary),
-    var(--color-l_primary)
-  );
-
-  --color_primary-triad1: hsl(
-    var(--color-h_primary-triad1),
-    var(--color-s_primary),
-    var(--color-l_primary)
-  );
-
-  --color_primary-triad2: hsl(
-    var(--color-h_primary-triad2),
-    var(--color-s_primary),
-    var(--color-l_primary)
-  );
-
-  --translucent-zero: 0;
-  --translucent-slight: 0.75;
-  --translucent-significant: 0.5;
-  --overlay-opacity: var(--translucent-zero);
-  --overlay-z-index: 10;
-
-  --clr-primary-400: hsl(var(--hue), 66%, 50%);
-  --clr-primary-500: hsl(var(--hue), 80%, 40%);
-  --clr-primary-600: hsl(var(--hue), 84%, 32%);
-  /* --clr-primary-min: hsl(0, 0%, 95%);
-  --clr-primary-100: hsl(167, 85%, 89%);
-  --clr-primary-200: hsl(168, 84%, 78%);
-  --clr-primary-300: hsl(171, 77%, 64%);
-  --clr-primary-400: hsl(172, 66%, 50%);
-  --clr-primary-500: hsl(173, 80%, 40%);
-  --clr-primary-600: hsl(175, 84%, 32%);
-  --clr-primary-700: hsl(175, 77%, 26%);
-  --clr-primary-800: hsl(176, 69%, 22%);
-  --clr-primary-900: hsl(176, 61%, 11%);
-  --clr-primary-max: hsl(0, 0%, 5%); */
+  --clr-amber-min: #fffbeb;
+  --clr-amber-100: #fef3c7;
+  --clr-amber-200: #fde68a;
+  --clr-amber-300: #fcd34d;
+  --clr-amber-400: #fbbf24;
+  --clr-amber-500: #f59e0b;
+  --clr-amber-600: #d97706;
+  --clr-amber-700: #b45309;
+  --clr-amber-800: #92400e;
+  --clr-amber-900: #78350f;
+  --clr-amber-max: #451a03;
 }
 
 :root {
   /* The last palette listed will be active */
+  /* >>= Rich Earth =<< */
+  --clr-shade-light: #c9cba3ff;
+  --clr-accent-light: rgb(222, 179, 98);
+  --clr-brand: #e26d5cff;
+  --clr-accent-dark: #723d46ff;
+  --clr-shade-dark: #2a2324;
+
   /* >>= Stealy Tan =<< */
   --clr-shade-light: #eeede7;
   --clr-accent-light: #9f8b69;
@@ -68,10 +64,11 @@
   --clr-accent-dark: #8c505e;
   --clr-shade-dark: #141a1b;
 
-  /* >>= Rich Earth =<< */
-  --clr-shade-light: #c9cba3ff;
-  --clr-accent-light: rgb(222, 179, 98);
-  --clr-brand: #e26d5cff;
-  --clr-accent-dark: #723d46ff;
-  --clr-shade-dark: #2a2324;
+  /* >>= Stealy Tan =<< */
+  --clr-shade-light: hsl(52, 90%, 95%);
+  --clr-accent-light: hsl(44, 100%, 66%);
+  --clr-accent-light: hsl(192, 31%, 28%);
+  --clr-brand: hsl(180, 88%, 32%);
+  --clr-accent-dark: hsl(192, 91%, 21%);
+  --clr-shade-dark: hsl(180, 11%, 15%);
 }
